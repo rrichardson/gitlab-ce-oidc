@@ -1,4 +1,7 @@
-# GitLab CE Docker Image with OpenID Connect
+# GitLab CE Docker Image with OpenID Connect for Dex
+
+This repo updates the [computersciencehouse docker](https://hub.docker.com/r/computersciencehouse/gitlab-ce-oidc/)  image leveraging the patch from https://michael.stapelberg.de/Artikel/gitlab-with-dex that updates the omniauth OIDC gem to not request UserInfo since Dex [currently](https://github.com/coreos/dex/issues/376) does not support one. 
+
 This repository serves to add OpenID Connect support to the official GitLab Docker image. The resulting image, which is automatically built when the upstream `gitlab/gitlab-ce` image is updated, can be found on the [Docker Hub](https://hub.docker.com/r/computersciencehouse/gitlab-ce-oidc/).
 
 ## Configuration
